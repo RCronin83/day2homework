@@ -9,22 +9,40 @@
         <fieldset>
           <legend>Basic Info</legend>
           <aside>
-            <label for='fullname-input'>Full Name</label>
+            <legend>Full Name</legend>
             <input type='text' name='fullname' id='fullname-input'
             placeholder='Luke Skywalker'>
           </aside>
           <aside>
-            <label for='profile-pic'>Profile Pic</label>
-            <input type='file' name='profile' id='profile-pic'>
+            <legend>Profile Pic</legend>
+              <input type='file' name='profile' id='profile-pic'>
           </aside>
           <aside>
-            <label for='email'>Email</label>
-            <input type='email' name='email' id='email'
-            placeholder='Luke@sky.com'>
+            <legend>Email</legend>
+              <input type='email' name='email' id='email'
+              placeholder='Luke@sky.com'>
           </aside>
+          <aside>
+            <legend>Side:</legend>
+              <label for='light'>Light</label>
+                <input type='radio'name='side' value='light'>
+              <label for='dark'>Dark</label>
+                <input type='radio' name='side' value='dark'
+          </aside>
+          <aside>
+            <legend>Origin Story</legend>
+            <textarea name='origin-story' id='origin-story'></textarea>
+          </fieldset>
+          <fieldset>
 
 
-        </fieldset>
+
+
+
+
+
+
+          </fieldset>
       </form>
     </body>
   </html>
