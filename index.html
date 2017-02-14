@@ -25,25 +25,55 @@
           <aside>
             <legend>Side:</legend>
               <label for='light'>Light</label>
-                <input type='radio'name='side' value='light'>
+                <input type='radio' name='side' value='light' id='light'>
               <label for='dark'>Dark</label>
-                <input type='radio' name='side' value='dark'
+                <input type='radio' name='side' value='dark' id='dark'>
           </aside>
           <aside>
             <legend>Origin Story</legend>
             <textarea name='origin-story' id='origin-story'></textarea>
-          </fieldset>
-          <fieldset>
-            <legend>Abilities</legend>
-            
-
-
-
-
-
-
-
-
+          </aside>
+        </fieldset>
+        <fieldset>
+          <legend>Abilities</legend>
+          <aside>
+            <legend>Lightsaber Color</legend>
+              <select name="Lightsaber Color">
+                <option value="Blue">Blue</option>
+                <option value="Red">Red</option>
+                <option value="Green">Green</option>
+                <option value="Purple">Purple</option>
+              </select>
+          </aside>
+          <aside>
+            <legend>How many objects can you levitate at once?</legend>
+            <input type='number' name='objects' id='levitate'
+              min='0'/>
+          </aside>
+          <aside>
+            <legend>Favorite Ability</legend>
+            <input type='text' name='ability' id='ability'
+              placeholder='precognition'>
+          </aside>
+          <aside>
+            <legend>Pilot Experience</legend>
+              <input type='checkbox' name='speeder' value='speeder'
+                id='speeder'>
+              <label for='speeder'>Speeder</label>
+              <input type='checkbox' name='transport' value='transport'
+                id='transport'>
+              <label for='transport'>Transport</label>
+              <input type='checkbox' name='x-wing' value='x-wing' id='x-wing'>
+              <label for='x-wing'>X-Wing</label>
+              <input type='checkbox' name='tie-Fighter' value='tie-fighter'
+                id='tie-fighter'>
+              <label for='tie-fighter'>TIE Fighter</label>
+              <input type='checkbox' name='starship' value='starship'
+                id='starship'>
+              <label for='starship'>Starship</label>
+              <input type='checkbox' name='bantha' value='bantha' id='bantha'>
+              <label for='bantha'>Bantha</label>
+          </aside>
           </fieldset>
       </form>
     </body>
