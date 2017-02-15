@@ -5,40 +5,42 @@
       <title>Force User Sign Up Form</title>
     </head>
     <body>
+      <h1>Force User Sign Up Form</h1>
       <form action='http://requestb.in/11mi5xw1' method='post'>
         <fieldset>
           <legend>Basic Info</legend>
           <aside>
-            <legend>Full Name</legend>
+            <label for='fullname-input'>Full Name</label>
             <input type='text' name='fullname' id='fullname-input'
-            placeholder='Luke Skywalker'>
+              placeholder='Luke Skywalker' required>
           </aside>
           <aside>
-            <legend>Profile Pic</legend>
+            <label for='profile-pic'>Profile Pic</label>
               <input type='file' name='profile' id='profile-pic'>
           </aside>
           <aside>
-            <legend>Email</legend>
+            <label for='email'>Email</label>
               <input type='email' name='email' id='email'
               placeholder='Luke@sky.com'>
           </aside>
           <aside>
-            <legend>Side:</legend>
+            Side:
               <label for='light'>Light</label>
                 <input type='radio' name='side' value='light' id='light'>
               <label for='dark'>Dark</label>
                 <input type='radio' name='side' value='dark' id='dark'>
           </aside>
           <aside>
-            <legend>Origin Story</legend>
+            <label for='origin-story'>Origin Story</label>
             <textarea name='origin-story' id='origin-story'></textarea>
           </aside>
         </fieldset>
         <fieldset>
           <legend>Abilities</legend>
           <aside>
-            <legend>Lightsaber Color</legend>
-              <select name="Lightsaber Color">
+            <label for='lightsaber-color'>Lightsaber Color</label>
+              <select name="lightsaber-color" id='lightsaber-color'>
+                <option value='Select+color'>Select Color</option>
                 <option value="Blue">Blue</option>
                 <option value="Red">Red</option>
                 <option value="Green">Green</option>
@@ -46,17 +48,17 @@
               </select>
           </aside>
           <aside>
-            <legend>How many objects can you levitate at once?</legend>
+            <label for='objects'>How many objects can you levitate at once?</label>
             <input type='number' name='objects' id='levitate'
               min='0'/>
           </aside>
           <aside>
-            <legend>Favorite Ability</legend>
+            <label for='favorite-ability'>Favorite Ability</label>
             <input type='text' name='ability' id='ability'
               placeholder='precognition'>
           </aside>
           <aside>
-            <legend>Pilot Experience</legend>
+            <h3>Pilot Experience</h3>
               <input type='checkbox' name='speeder' value='speeder'
                 id='speeder'>
               <label for='speeder'>Speeder</label>
@@ -75,6 +77,32 @@
               <label for='bantha'>Bantha</label>
           </aside>
           </fieldset>
-      </form>
+          <fieldset>
+            <legend>Application Info</legend>
+          <aside>
+            <label for='mentor'>Desired Mentor</label>
+            <input type='text' name='mentor' id='mentor'
+              placeholder='Yoda'>
+          </aside>
+          <aside>
+            <label for='application-date'>Application Date</label>
+            <input type='date' name='date' id='application-date'>
+          </aside>
+          <aside>
+            <label for='application-password'>Application Password</label>
+            <input type='password' name='password' id='application-password'
+              maxlength='8'>
+          </aside>
+          <aside>
+            <label for='darksidequestion'>How do you get to the Dark Side?</label>
+            <textarea name='darksidequestion' id='darksidequestion'></textarea>
+          </aside>
+          <aside>
+            <input type='reset' name='reset' value='Start Over'>
+
+            <input type='submit' name='submit' value='submit'>
+          </aside>
+          </fieldset>
+
     </body>
   </html>
